@@ -25,7 +25,7 @@ print("center of static circle (x axis)=", cX_gray, "(y axis)=", cY_gray)
 frame_number = 0
 while True:
     success, image = cap.read()
-    if not success or frame_number>300:
+    if not success:
         break
     frame_number += 1
     print("frame =", frame_number)
